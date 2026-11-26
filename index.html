@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f7f4" />
+  <title>ketik. — ruang tumbuh jemarimu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" data-page="home">ketik<span>.</span></a>
+      <span class="brand-caption">ruang tumbuh jemarimu</span>
+
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <button class="nav-link active" data-page="home">Beranda</button>
+        <button class="nav-link" data-page="practice">Latihan</button>
+        <button class="nav-link" data-page="progress">Progres</button>
+      </nav>
+
+      <div class="top-actions">
+        <span class="streak-pill">✦ <b id="streakCount">7 hari beruntun</b></span>
+        <button class="button button-dark button-small" data-page="practice">
+          Mulai latihan ↗
+        </button>
+      </div>
+
+      <button class="mobile-menu" id="mobileMenu" aria-label="Buka navigasi">☰</button>
+    </header>
+
+    <main>
+      <!-- BERANDA -->
+      <section class="page active" id="page-home">
+        <section class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">RUANG UNTUK JADI LEBIH CEPAT</span>
+            <h1>Ide besar dimulai<br />dari ujung jari.</h1>
+
+            <p class="hero-description">
+              Bangun ritme, tingkatkan akurasi, dan nikmati setiap ketukan.
+              Cukup satu menit untuk jadi lebih baik.
+            </p>
+
+            <div class="hero-buttons">
+              <button class="button button-primary" data-page="practice">
+                Mulai latihan →
+              </button>
+              <button class="button button-white" data-page="progress">
+                Lihat progres ↗
+              </button>
+            </div>
+
+            <p class="micro-copy">Tanpa daftar. Langsung melaju.</p>
+          </div>
+
+          <div class="flow-card">
+            <span class="eyebrow">TEMUKAN FLOW-MU.</span>
+            <h2>Satu ketukan lebih dekat.</h2>
+
+            <div class="sample-typing">
+              <span>berani mencoba, terus bertumbuh</span><i></i>
+            </div>
+
+            <div class="keyboard-art" aria-hidden="true">
+              <div class="key-row">
+                <kbd>Q</kbd><kbd>W</kbd><kbd>E</kbd><kbd>R</kbd><kbd>T</kbd>
+                <kbd>Y</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd><kbd>P</kbd>
+              </div>
+              <div class="key-row indent">
+                <kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd class="key-hot">F</kbd>
+                <kbd>G</kbd><kbd>H</kbd><kbd class="key-hot">J</kbd><kbd>K</kbd><kbd>L</kbd>
+              </div>
+              <div class="key-row indent-more">
+                <kbd>Z</kbd><kbd>X</kbd><kbd>C</kbd><kbd>V</kbd><kbd>B</kbd><kbd>N</kbd><kbd>M</kbd>
+              </div>
+              <div class="key-row">
+                <kbd class="space-key">space</kbd>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="summary-strip">
+          <div class="summary-item">
+            <span>KECEPATAN TERBAIK</span>
+            <strong><b id="homeBest">72</b> <small>WPM</small></strong>
+            <em>↑ 12 dari minggu lalu</em>
+          </div>
+
+          <div class="summary-item">
+            <span>AKURASI RATA-RATA</span>
+            <strong><b id="homeAccuracy">98</b> <small>%</small></strong>
+            <em>Teliti di setiap ketukan</em>
+          </div>
+
+          <div class="summary-item">
+            <span>WAKTU LATIHAN</span>
+            <strong><b id="homeMinutes">24</b> <small>menit</small></strong>
+            <em>Investasi kecil, hasil besar</em>
+          </div>
+
+          <div class="summary-item">
+            <span>TARGET HARIAN</span>
+            <strong><b id="homeTarget">3 / 5</b> <small>latihan</small></strong>
+            <em>Dua langkah lagi, kamu bisa!</em>
+          </div>
+        </section>
+
+        <section class="rhythm-section">
+          <div class="section-heading">
+            <div>
+              <h2>Pilih ritmemu.</h2>
+              <p>Setiap mode, satu langkah maju.</p>
+            </div>
+            <span class="step-label">01 — PILIH / 02 — KETIK / 03 — TUMBUH</span>
+          </div>
+
+          <div class="mode-grid">
+            <button class="mode-card mode-featured" data-mode="speed">
+              <span>01 <b>↗</b></span>
+              <h3>Tes kecepatan</h3>
+              <p>Seberapa cepat jemarimu hari ini?</p>
+              <small>60 detik · Bahasa Indonesia</small>
+            </button>
+
+            <button class="mode-card" data-mode="words">
+              <span>02 <b>↗</b></span>
+              <h3>Latihan kata</h3>
+              <p>Bangun fondasi, satu kata demi satu.</p>
+              <small>Kata sehari-hari · Pemula</small>
+            </button>
+
+            <button class="mode-card" data-mode="sentences">
+              <span>03 <b>↗</b></span>
+              <h3>Latihan kalimat</h3>
+              <p>Temukan ritme dalam setiap cerita.</p>
+              <small>Kalimat pendek · Menengah</small>
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <!-- LATIHAN -->
+      <section class="page" id="page-practice">
+        <button class="back-link" data-page="home">← Kembali ke beranda</button>
+
+        <div class="practice-heading">
+          <div>
+            <span class="eyebrow">LATIHAN HARI INI</span>
+            <h1>Temukan ritmemu.</h1>
+            <p>Rilekskan bahu. Biarkan jemarimu bercerita.</p>
+          </div>
+
+          <label class="mode-select-wrap">
+            Mode latihan
+            <select id="modeSelect">
+              <option value="speed">Tes kecepatan · 60 detik</option>
+              <option value="words">Latihan kata · 30 kata</option>
+              <option value="sentences">Latihan kalimat · 10 kalimat</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="live-stats">
+          <div>
+            <strong id="timer">01:00</strong>
+            <span>WAKTU TERSISA</span>
+          </div>
+          <div>
+            <strong id="liveWpm">0</strong>
+            <span>KATA / MENIT</span>
+          </div>
+          <div>
+            <strong id="liveAccuracy">100%</strong>
+            <span>AKURASI</span>
+          </div>
+          <div>
+            <strong id="liveChars">0</strong>
+            <span>KATA SELESAI</span>
+          </div>
+        </div>
+
+        <div class="typing-panel">
+          <div class="typing-panel-top">
+            <span class="active-label"><i></i> LATIHAN AKTIF</span>
+            <span id="progressLabel">TES KECEPATAN</span>
+          </div>
+
+          <div class="prompt-area" id="promptArea" aria-label="Teks latihan"></div>
+
+          <div class="progress-track">
+            <div id="progressBar"></div>
+          </div>
+        </div>
+
+        <p class="typing-hint">
+          Jaga akurasi dulu. Kecepatan akan mengikuti.
+        </p>
+
+        <div class="keyboard-live" id="keyboardLive" aria-label="Ilustrasi keyboard">
+          <div class="key-row">
+            <kbd>Q</kbd><kbd>W</kbd><kbd>E</kbd><kbd>R</kbd><kbd>T</kbd>
+            <kbd>Y</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd><kbd>P</kbd>
+          </div>
+          <div class="key-row indent">
+            <kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd><kbd>G</kbd>
+            <kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd>
+          </div>
+          <div class="key-row indent-more">
+            <kbd>Z</kbd><kbd>X</kbd><kbd>C</kbd><kbd>V</kbd><kbd>B</kbd><kbd>N</kbd><kbd>M</kbd>
+          </div>
+          <div class="key-row">
+            <kbd class="space-key">space</kbd>
+          </div>
+        </div>
+
+        <div class="practice-bottom">
+          <span>Pratinjau alur · Gunakan tombol di papan untuk melihat progres ketikanmu.</span>
+          <div>
+            <button class="button button-white" id="restartBtn">↻ Ulangi</button>
+            <button class="button button-primary" id="finishBtn">
+              Selesaikan simulasi →
+            </button>
+          </div>
+        </div>
+
+        <input
+          id="typingInput"
+          class="typing-input"
+          type="text"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          aria-label="Ketik teks latihan di sini"
+        />
+      </section>
+
+      <!-- PROGRES / HASIL -->
+      <section class="page" id="page-progress">
+        <button class="back-link" data-page="home">← Kembali ke beranda</button>
+
+        <div class="results-heading">
+          <div>
+            <span class="eyebrow">JEJAK KECIL, LANGKAH LEBIH JAUH</span>
+            <h1>Jemarimu makin jago.</h1>
+            <p>Latihan 60 detik selesai. Rayakan progres kecilmu hari ini.</p>
+          </div>
+          <button class="button button-primary" data-page="practice">
+            Latihan lagi →
+          </button>
+        </div>
+
+        <div class="results-grid">
+          <div class="score-card">
+            <span class="score-tag">✦ REKOR PRIBADI</span>
+            <strong id="resultWpm">72</strong>
+            <span class="score-unit">KATA PER MENIT</span>
+            <div class="score-divider"></div>
+            <b id="resultDelta">+12 WPM</b>
+            <p>Lebih cepat dari minggu lalu. Konsistensimu mulai terasa.</p>
+          </div>
+
+          <div class="result-main">
+            <div class="mini-stat-grid">
+              <div class="mini-stat">
+                <strong id="resultAccuracy">98%</strong>
+                <span>AKURASI</span>
+                <small id="resultCorrect">753 benar · 7 salah</small>
+              </div>
+
+              <div class="mini-stat">
+                <strong id="resultTime">60</strong>
+                <span>DETIK</span>
+                <small>Waktu latihan</small>
+              </div>
+
+              <div class="mini-stat">
+                <strong id="resultChars">360</strong>
+                <span>KARAKTER</span>
+                <small>Total ketukan</small>
+              </div>
+            </div>
+
+            <div class="chart-card">
+              <div class="chart-title">
+                <b>Ritme sepanjang sesi</b>
+                <span>● Kecepatan (WPM)</span>
+              </div>
+              <div class="chart-bars" id="chartBars" aria-label="Grafik kecepatan mengetik"></div>
+              <div class="chart-axis">
+                <span>0s</span><span>15s</span><span>30s</span><span>45s</span><span>60s</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="insight-banner">
+          <b>CATATAN KECIL</b>
+          <span id="insightText">
+            Kecepatanmu naik. Sekarang, pertahankan akurasi di atas 98%.
+          </span>
+          <small>Pelan itu boleh. Berhenti jangan.</small>
+        </div>
+
+        <div class="next-step">
+          <div>
+            <b>Sedikit lagi, target tercapai.</b>
+            <p id="sessionMessage">
+              4 dari 5 latihan hari ini. Satu sesi lagi untuk dirimu yang lebih baik.
+            </p>
+          </div>
+          <div class="dots">
+            <i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>5</i>
+          </div>
+          <button class="button button-white" data-page="home">
+            Kembali ke beranda →
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 ketik. &nbsp;Sedikit latihan, banyak kemajuan.</span>
+      <span>Dibuat untuk jemari yang ingin melaju.</span>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
